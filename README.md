@@ -29,10 +29,10 @@ This list strive to include as many wap-sites as possible with a few exceptions.
 ### Example item in array
 ```
 {
-	"title": "Localize Friends",
-	"url": "http://wap.localize-friends.de/",
-	"description": "Free friends chat for computer and mobile phone",
-	"category": "personal"
+	"title": "Fun weather chat",
+	"url": "http://wap.example-weather-site.com/",
+	"description": "Free fun weather chat for computer and mobile phone",
+	"category": "weather"
 	"language": [
 	    "en",
 	    "de"
