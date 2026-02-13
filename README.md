@@ -6,6 +6,10 @@ There is also support for different formats that is not natively supported on co
 
 This reposiorty contains some components that I hope other can have use for and that can be improved with outside contribution.
 
+[bookmarks.json](#bookmarksjson)
+
+[localsrc.js](#localsrcjs)
+
 ## Bookmarks.json
 
 This list strive to include as many wap-sites as possible with a few exceptions.
