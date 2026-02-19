@@ -68,6 +68,8 @@ This list strive to include as many wap-sites as possible with a few exceptions.
 
 `browser_sniffing` - this page uses browser sniffing and only render wml with a suitable user agent (all pages is tested with the proxy using `Nokia7110/1.0 (01.01)`) 
 
+`encoding_issues` - Tofu issues (encoding issues like missmatched header or encoding-tag that https://wapproxy.w3l.se/ can solve in "Quirks Mode" is not labeled)
+
 ## localsrc.js
 
 This function serves as a modern translation layer for the legacy WML `localsrc` attribute, mapping ancient WAP pictogram codes to standard UTF-8 emojis. In the WML 1.x era, devices like the Nokia 3310 or Openwave-based phones used `localsrc` to display built-in ROM icons (e.g., `pict:///core/phone` or `icon_279`) to save bandwidth. Since modern browsers do not possess these binary resources, this script intercepts those URIs and renders a semantic emoji equivalent (e.g., 📞).
