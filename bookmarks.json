@@ -32,6 +32,18 @@
     "language": "en"
   },
   {
+    "title": "amiga-news.de (English)",
+    "url": "http://www.amiga-news.de/en/index.wml",
+    "description": "Latest Amiga News",
+    "language": "en"
+  },
+  {
+    "title": "amiga-news.de (German)",
+    "url": "http://www.amiga-news.de/index.wml",
+    "description": "Amiga-News auf den Punkt gebracht",
+    "language": "de"
+  },
+  {
     "title": "ArcadeTones",
     "url": "http://arcadetones.emuunlim.com/wap.wml",
     "description": "Midi ringtones from different games",
@@ -73,6 +85,12 @@
     ]
   },
   {
+    "title": "Blamba!",
+    "url": "http://wap.blamba.de/",
+    "description": "Download ringtones, logos, games and apps",
+    "language": "en"
+  },
+  {
     "title": "Blue G Lab",
     "url": "http://wap.yuyangzhou.name/",
     "description": "Mobile Phone Information, downloads",
@@ -96,7 +114,7 @@
   },
   {
     "title": "China Central Television",
-    "url": "https://www.cctv.com/wap/index.wml",
+    "url": "http://www.cctv.com/wap/index.wml",
     "description": "News",
     "language": "zh",
     "flags": [
@@ -106,7 +124,7 @@
   },
   {
     "title": "CNMV",
-    "url": "https://www.cnmv.es/wap/index.wml",
+    "url": "http://www.cnmv.es/wap/index.wml",
     "description": "The National Securities Market Commission is the Spanish government agency responsible for the financial regulation of the securities markets in Spain",
     "language": "es",
     "flags": [
@@ -115,7 +133,7 @@
   },
   {
     "title": "Cobra!'s WAPsite",
-    "url": "https://cobradile.neocities.org/index.wml",
+    "url": "http://cobradile.neocities.org/index.wml",
     "description": "Personal wap site in Scots.",
     "language": "sco",
     "flags": [
@@ -136,7 +154,7 @@
   },
   {
     "title": "Current weather chicopee",
-    "url": "https://www.jda1.com/weather/wap/index.wml",
+    "url": "http://www.jda1.com/weather/wap/index.wml",
     "category": "weather",
     "language": "en",
     "flags": [
@@ -145,15 +163,33 @@
   },
   {
     "title": "Cybex s.a.",
-    "url": "https://www.cybex.gr/index.wml",
+    "url": "http://www.cybex.gr/index.wml",
     "description": "Company in Athens, Greece that specializes in internet services",
     "language": "en"
   },
   {
+    "title": "D.D.E.",
+    "url": "http://wap.dde.no/index.wml",
+    "description": "D.D.E. is a Norwegian pop/rock group, WAP-site contains tour list, supporter news",
+    "language": "no",
+    "flags": [
+      "news_site_no_longer_updated"
+    ]
+  },
+  {
     "title": "Dan-Dare.net",
-    "url": "https://www.dan-dare.net/index.wml",
+    "url": "http://www.dan-dare.net/index.wml",
     "description": "Dan-Dare.net is a site dedicated to the classic British comic strip Dan Dare. It features a wealth of information about the strip, including its history, characters, and episodes.",
     "language": "en"
+  },
+  {
+    "title": "Discord WAP (inofficial)",
+    "url": "http://gtrxac.fi/wap/",
+    "description": "A WAP interface for Discord",
+    "language": "en",
+    "flags": [
+      "browser_sniffing"
+    ]
   },
   {
     "title": "DVD PriceSearch",
@@ -166,7 +202,7 @@
   },
   {
     "title": "DVD Talk on WAP",
-    "url": "https://www.dvdtalk.com/index.wml",
+    "url": "http://www.dvdtalk.com/index.wml",
     "description": "DVD movie news, reviews and more",
     "language": "en",
     "flags": [
@@ -174,13 +210,21 @@
     ]
   },
   {
-    "title": "Electrónica Analógica",
-    "url": "https://www.uco.es/~el1lirem/wap/index.wml",
-    "language": "es"
+    "title": "Dévényi Barna zenész",
+    "url": "http://devenyibarna.hu/index.wml",
+    "description": "Hungarian musician performing in weddings, balls, private and corporate parties",
+    "language": "hu"
+  },
+  {
+    "title": "Electrónica Analógica / Matías Liñán Reyes",
+    "url": "http://www.uco.es/~el1lirem/wap/index.wml",
+    "description": "Lessons in electronics",
+    "language": "es",
+    "category": "personal"
   },
   {
     "title": "Erik's Rail News",
-    "url": "https://eriksrailnews.com/wap.wml",
+    "url": "http://eriksrailnews.com/wap.wml",
     "description": "News regarding railway with focus on Sweden",
     "language": "en",
     "flags": [
@@ -189,8 +233,14 @@
   },
   {
     "title": "EuroBillTracker",
-    "url": "https://wap.eurobilltracker.com/",
+    "url": "http://wap.eurobilltracker.com/",
     "description": "EuroBillTracker.eu is an international non-profit volunteer team dedicated to tracking Euro notes around the world.",
+    "language": "en"
+  },
+  {
+    "title": "Frink",
+    "url": "http://futureboy.us/fsp/wml.fsp",
+    "description": "Frink is a practical calculating tool and programming language. This tool allows Frink calculations.",
     "language": "en"
   },
   {
@@ -232,7 +282,7 @@
   },
   {
     "title": "Geuder.se",
-    "url": "https://geuder.se/ringsignal.wml",
+    "url": "http://geuder.se/ringsignal.wml",
     "description": "Old school ringtones in mp3-format",
     "language": "sv"
   },
@@ -255,7 +305,7 @@
   },
   {
     "title": "Gozo-Malta Weather",
-    "url": "https://gozo.ws/weather/wap/index.wml",
+    "url": "http://gozo.ws/weather/wap/index.wml",
     "description": "Weather forcast for Victoria, Gozo, Malta",
     "category": "weather",
     "language": "en",
@@ -264,8 +314,14 @@
     ]
   },
   {
+    "title": "Gyömrő-Molnár Béla profi vőfély",
+    "url": "http://wap.nagyvofely.hu/",
+    "description": "Best man for hire",
+    "language": "hu"
+  },
+  {
     "title": "Hayastan.com",
-    "url": "https://wap.hayastan.com/index.wml",
+    "url": "http://wap.hayastan.com/index.wml",
     "description": "Armenian music as ringtones",
     "language": "en"
   },
@@ -285,8 +341,14 @@
     "language": "en"
   },
   {
+    "title": "i-MetrO",
+    "url": "http://imetro.nanika.net",
+    "description": "Public transport guide",
+    "language": "en"
+  },
+  {
     "title": "Ilm",
-    "url": "https://www.ilm.ee/wap/index.wml",
+    "url": "http://www.ilm.ee/wap/index.wml",
     "description": "Weather in Estonia",
     "language": "et",
     "category": "weather",
@@ -295,26 +357,42 @@
     ]
   },
   {
+    "title": "Isle of Wight Weather",
+    "url": "http://www.isleofwightweather.com/wap/index.wml",
+    "category": "weather",
+    "description": "The Isle of Wight weather stationt, situated on the outskirts of Newport(England)",
+    "language": "en",
+    "flags": [
+      "news_site_no_longer_updated"
+    ]
+  },
+  {
     "title": "JLearnItME",
-    "url": "https://www.jlearnit.com/index.wml",
+    "url": "http://www.jlearnit.com/index.wml",
     "description": "Free multilingual dictionary",
     "language": "en"
   },
   {
+    "title": "John-Keats.com mobile",
+    "url": "http://www.john-keats.com/wap/index.wml",
+    "description": "Read poetry, Keats, Shakespeare, Dickinson etc",
+    "language": "en"
+  },
+  {
+    "title": "Józsi Kóka",
+    "url": "http://wap.kokajozsi.hu/",
+    "description": "Wedding singer in Hungary",
+    "language": "hu"
+  },
+  {
     "title": "Kannel",
-    "url": "https://www.kannel.org/wap/main.wml",
+    "url": "http://www.kannel.org/wap/main.wml",
     "description": "Kannel is an open source WAP and SMS gateway",
     "language": "en"
   },
   {
-    "title": "Kannel is an open source WAP gateway.",
-    "url": "https://www.kannel.org/wap/main.wml",
-    "description": "Kannel is an open source WAP gateway.",
-    "language": "en"
-  },
-  {
     "title": "Kuwait City",
-    "url": "https://www.met.gov.kw/MMS/en.wml",
+    "url": "http://www.met.gov.kw/MMS/en.wml",
     "description": "Weather forecast for Kuwait",
     "category": "weather",
     "language": "en",
@@ -324,7 +402,7 @@
   },
   {
     "title": "Kuwait City",
-    "url": "https://www.met.gov.kw/MMS/ar.wml",
+    "url": "http://www.met.gov.kw/MMS/ar.wml",
     "description": "Weather forecast for Kuwait",
     "category": "weather",
     "language": "ar",
@@ -334,7 +412,7 @@
   },
   {
     "title": "Kännets Knutlexikon",
-    "url": "https://www.korpegard.se/wap/index.wml",
+    "url": "http://www.korpegard.se/wap/index.wml",
     "description": "WAP-sajten om knopar!",
     "language": "sv"
   },
@@ -345,7 +423,7 @@
   },
   {
     "title": "landmaal.dk",
-    "url": "https://www.landmaal.dk/index.wml",
+    "url": "http://www.landmaal.dk/index.wml",
     "description": "Landmaal.dk was dedicated to land surveying in Denmark, providing technical resources, 3D modeling tools, and database information.",
     "language": "da",
     "flags": [
@@ -359,13 +437,13 @@
   },
   {
     "title": "Lehelvari IT Services",
-    "url": "https://www.lehelvari.hu/wap/index.wml",
+    "url": "http://www.lehelvari.hu/wap/index.wml",
     "description": "Software development and consulting",
     "language": "hu"
   },
   {
     "title": "lesnik11-wap",
-    "url": "https://lesnik11-wap.narod.ru/index.wml",
+    "url": "http://lesnik11-wap.narod.ru/index.wml",
     "description": "Links and downloads",
     "language": "ru"
   },
@@ -385,32 +463,47 @@
     "language": "en"
   },
   {
+    "title": "LODGING-QUEBEC.COM",
+    "url": "http://www.hebergement-quebec.net/mobile/index.wml",
+    "description": "Find lodging in Quebec, Canada",
+    "language": [
+      "en",
+      "fr"
+    ]
+  },
+  {
     "title": "LookWAYup",
     "url": "http://lookwayup.com/lwu.exe/wap",
     "description": "Dictionary Thesaurus",
     "language": "en"
   },
   {
+    "title": "Lyrik fuers Handy",
+    "url": "http://www.rilke.de/wap/index.wml",
+    "description": "Read German-language poets",
+    "language": "de"
+  },
+  {
     "title": "Mathe online",
-    "url": "https://www.mathe-online.at/wap/index.wml",
+    "url": "http://www.mathe-online.at/wap/index.wml",
     "description": "Math functions",
     "language": "de"
   },
   {
     "title": "Matt Croydon",
-    "url": "https://postneo.com/projects/rss2wml/rss.wml#welcome",
+    "url": "http://postneo.com/projects/rss2wml/rss.wml#welcome",
     "description": "A wml version of rss feed",
     "language": "en"
   },
   {
     "title": "Meadow Valley",
-    "url": "https://www.trax.bc.ca/index.wml",
+    "url": "http://www.trax.bc.ca/index.wml",
     "description": "Acreages for sale on Thetis Island, British Columbia, Canada",
     "language": "en"
   },
   {
     "title": "Medien-News WAP",
-    "url": "https://www.the-media-channel.com/index.wml",
+    "url": "http://www.the-media-channel.com/index.wml",
     "description": "TV news",
     "language": "de",
     "flags": [
@@ -431,8 +524,9 @@
   },
   {
     "title": "MOBILMENETREND.HU",
-    "url": "https://mobilmenetrend.hu/index.wml",
-    "description": "Schedule for local governments"
+    "url": "http://mobilmenetrend.hu/index.wml",
+    "description": "Schedule for local governments",
+    "language": "hu"
   },
   {
     "title": "Mont-Tremblant",
@@ -444,8 +538,17 @@
     ]
   },
   {
+    "title": "Moshi's Fishy Lore Site",
+    "url": "http://wml.moshisdragonlore.co.za/",
+    "description": "J2ME apps, wallpapers, ringtones and more",
+    "language": "en",
+    "flags": [
+      "some_broken_content"
+    ]
+  },
+  {
     "title": "Mu3D",
-    "url": "https://m.mu3d.com/index.wml",
+    "url": "http://m.mu3d.com/index.wml",
     "description": "A few ringtones",
     "language": "en"
   },
@@ -458,7 +561,7 @@
   },
   {
     "title": "NETCall",
-    "url": "http://arcadetones.emuunlim.com/wap.wml",
+    "url": "https://mobile.sipnet.ru/index.wml",
     "description": "MIDlet for NETCall",
     "language": "en"
   },
@@ -482,13 +585,13 @@
   },
   {
     "title": "Nostalgia Nerd",
-    "url": "https://www.nostalgianerd.com/wml.wml",
+    "url": "http://www.nostalgianerd.com/wml.wml",
     "description": "Welcome to the Nostalgia Nerd Website in WML!",
     "language": "en"
   },
   {
     "title": "Online rally results",
-    "url": "https://wap.walter.pl/",
+    "url": "http://wap.walter.pl/",
     "description": "Polish rally results from RSMP (Rajdowe Samochodowe Mistrzostwa Polski) and RPP (Rajdowy Puchar Polski)",
     "language": "pl",
     "flags": [
@@ -517,7 +620,7 @@
   },
   {
     "title": "Per Bang",
-    "url": "https://wap.perbang.dk/",
+    "url": "http://wap.perbang.dk/",
     "description": "Download imelody (.imy) ringtones. Some links to ringtones broken.",
     "language": "en",
     "flags": [
@@ -526,26 +629,41 @@
   },
   {
     "title": "Perisic guesthouse",
-    "url": "https://www.perisic.com/wap/new/home.wml",
+    "url": "http://www.perisic.com/wap/new/home.wml",
     "description": "Perisic guesthouse in Dalmatia, Croatia",
     "language": "en"
   },
   {
     "title": "Persan.nu",
-    "url": "https://persan.nu/wml/start.wml",
+    "url": "http://persan.nu/wml/start.wml",
     "description": "Most private, but official. Contact information, tips on Ericsson R380, images.",
     "language": "en",
     "category": "personal"
   },
   {
     "title": "PhilJohn.com",
-    "url": "https://philjohn.com/main.wml",
+    "url": "http://philjohn.com/main.wml",
     "description": "Poetry by Phil John Kneis",
     "language": "en"
   },
   {
+    "title": "Plocman Sp. z o.o.",
+    "url": "http://wap.bip.org.pl/",
+    "description": "Polish business that specializes in BIP",
+    "language": "pl"
+  },
+  {
+    "title": "Posture School Brazil",
+    "url": "http://escoladepostura.com.br/wap/index.wml",
+    "description": "Specialized Treatment for the Spine, only \"Notícias\" and \"Matérias\" seem to work- Have articles spine issues, posture and similar",
+    "language": "pt",
+    "flags": [
+      "broken_content"
+    ]
+  },
+  {
     "title": "private-zone.ch",
-    "url": "https://www.private-zone.ch/WAP/start.wml",
+    "url": "http://www.private-zone.ch/WAP/start.wml",
     "language": "de",
     "flags": [
       "broken_content"
@@ -553,9 +671,15 @@
   },
   {
     "title": "Ralf Wadenström",
-    "url": "https://www.wadenstrom.net/wap/index.wml",
+    "url": "http://www.wadenstrom.net/wap/index.wml",
     "description": "Contact information to Ralf Wadenström, doctor of Philosophy, philosopher",
     "language": "sv"
+  },
+  {
+    "title": "Restaurant König",
+    "url": "http://wap.konigetterem.hu/",
+    "description": "Restaurant in Sóskút, Hungary",
+    "language": "hu"
   },
   {
     "title": "RoligaSidor.se",
@@ -595,7 +719,7 @@
   },
   {
     "title": "Sirius GT Inc",
-    "url": "https://www.wap.siriusgt.com/",
+    "url": "http://www.wap.siriusgt.com/",
     "description": "Accounting software for Windows",
     "language": "en"
   },
@@ -616,7 +740,7 @@
   },
   {
     "title": "SmoothDesign",
-    "url": "https://wap.smoothdesign.net/",
+    "url": "http://wap.smoothdesign.net/",
     "description": "Smoothdesign.net is a web design and development company",
     "language": "en",
     "flags": [
@@ -624,19 +748,43 @@
     ]
   },
   {
+    "title": "st-donat cell mobile phone directory",
+    "url": "http://www.st-donat.com/mobile/index.wml",
+    "description": "Phone directory for St. Donat, France",
+    "language": [
+      "en",
+      "fr"
+    ]
+  },
+  {
     "title": "STARMEN.NET",
-    "url": "https://starmen.net/index.wml",
+    "url": "http://starmen.net/index.wml",
+    "language": "en"
+  },
+  {
+    "title": "Stello Pix",
+    "url": "http://wap.brayforum.com/index.wml",
+    "description": "Background images, mostly travel related",
     "language": "en"
   },
   {
     "title": "Still Having a Ball",
-    "url": "https://www.wejuggle2.com/index.wml",
+    "url": "http://www.wejuggle2.com/index.wml",
     "description": "We are entertainers with a fun portrayal of family values",
     "language": "en"
   },
   {
+    "title": "subsecond.de",
+    "url": "http://subsecond.de/",
+    "description": "Mostly broken links, also some poetry, animation and some tools (calculate transfer time, profit/loss, Little law)",
+    "language": "de",
+    "flags": [
+      "some_broken_content"
+    ]
+  },
+  {
     "title": "Sun3/3x Archive",
-    "url": "https://www.sun3arc.org/WAP/sun3arc.wml",
+    "url": "http://www.sun3arc.org/WAP/sun3arc.wml",
     "description": "Information about the Sun3/3x Series",
     "language": "en"
   },
@@ -655,7 +803,7 @@
   },
   {
     "title": "Teletext",
-    "url": "https://wap.teletext.hu/index.wml",
+    "url": "http://wap.teletext.hu/index.wml",
     "description": "Hungarian Teletext",
     "language": "hu",
     "flags": [
@@ -664,7 +812,7 @@
   },
   {
     "title": "tequilacat",
-    "url": "https://tequilacat.narod.ru/wap/index.wml",
+    "url": "http://tequilacat.narod.ru/wap/index.wml",
     "description": "Background",
     "language": "en",
     "flags": [
@@ -673,21 +821,37 @@
   },
   {
     "title": "THRS.net",
-    "url": "https://www.thehorseracingsource.com/home.wml",
+    "url": "http://www.thehorseracingsource.com/home.wml",
     "description": "A Horse Racing Picks Service",
     "language": "en"
   },
   {
     "title": "Tipowap",
-    "url": "https://www.thehorseracingsource.com/home.wml",
+    "url": "http://manule228.lh1.in/tipowap/twap-legacy.wml",
     "description": "Ringtones in SMAF/MIDI format and some images",
     "language": "en"
   },
   {
     "title": "Toreci Makine Ticaret Ekonomik Is Makineleri",
-    "url": "https://www.toreci.com.tr/wap/",
+    "url": "http://www.toreci.com.tr/wap/",
     "description": "You will find the economical production machines you are looking for with us.",
     "language": "tr"
+  },
+  {
+    "title": "toysaregoodWAP",
+    "url": "http://toysaregoodfood.com/content/index.wml",
+    "description": "Long-running personal blog by Matty about knitting, PEZ dispensers and other subjects",
+    "language": "en",
+    "category": "personal"
+  },
+  {
+    "title": "Turkish State Meteorological Service",
+    "url": "http://www.mgm.gov.tr/wap/index.wml",
+    "category": "weather",
+    "language": "tr",
+    "flags": [
+      "news_site_no_longer_updated"
+    ]
   },
   {
     "title": "UC123",
@@ -706,7 +870,7 @@
   },
   {
     "title": "WAP Links",
-    "url": "https://hfrmobile.com/waplinks.wml",
+    "url": "http://hfrmobile.com/waplinks.wml",
     "language": "en",
     "flags": [
       "broken_content"
@@ -723,18 +887,30 @@
   },
   {
     "title": "wap.five.no",
-    "url": "https://wap.five.no/",
+    "url": "http://wap.five.no/",
     "description": "Discography for German musicians Sandra and Enigma",
     "language": "en"
   },
   {
     "title": "WAP.URRI.CH",
-    "url": "https://wap.urri.ch/",
+    "url": "http://wap.urri.ch/",
     "language": "de"
   },
   {
+    "title": "WAPipedia",
+    "url": "http://wiki.bevelgacom.be/",
+    "description": "Wikipedia for WAP",
+    "language": "en"
+  },
+  {
+    "title": "wapix",
+    "url": "http://wapri.wapix.ru/",
+    "description": "Ringtones, games and more. Order with SMS.",
+    "language": "ru"
+  },
+  {
     "title": "wApua",
-    "url": "https://fsinfo.noone.org/~abe/wApua/index.wml",
+    "url": "http://fsinfo.noone.org/~abe/wApua/index.wml",
     "description": "wApua is a web browser for WML (version 1.1 and 1.2) pages.",
     "language": "en"
   },
@@ -753,14 +929,14 @@
   },
   {
     "title": "WeatherOnline",
-    "url": "https://wap.weatheronline.co.uk/",
+    "url": "http://wap.weatheronline.co.uk/",
     "description": "Check the weather.",
     "category": "weather",
     "language": "en"
   },
   {
     "title": "Weatherweb.net",
-    "url": "https://wap.weatherweb.net/",
+    "url": "http://wap.weatherweb.net/",
     "description": "Aviation and marine weather forecast for UK",
     "category": "weather",
     "language": "en",
@@ -770,8 +946,14 @@
   },
   {
     "title": "WebEleemnts",
-    "url": "https://www.webelements.com/wapelements/index.wml",
+    "url": "http://www.webelements.com/wapelements/index.wml",
     "description": "The periodic table of the elements",
+    "language": "en"
+  },
+  {
+    "title": "Welcome to The Mobile Webtender drink database.",
+    "url": "http://wap.webtender.com/wap/",
+    "description": "Drink recipes",
     "language": "en"
   },
   {
@@ -788,7 +970,7 @@
   },
   {
     "title": "WLIrc",
-    "url": "https://wirelessirc.sourceforge.net/wap/index.wml",
+    "url": "http://wirelessirc.sourceforge.net/wap/index.wml",
     "description": "WLIrc is a IRC Client for cell phones that support j2me",
     "language": "en"
   },
@@ -799,8 +981,14 @@
     "language": "en"
   },
   {
+    "title": "WWWMMM",
+    "url": "http://wwwmmm.free.fr/index.wml",
+    "description": "Kama Sutra and \"Yo Mama\" jokes",
+    "language": "en"
+  },
+  {
     "title": "YesWAP",
-    "url": "https://yeswap.com",
+    "url": "http://yeswap.com",
     "description": "A directory of over 1200 mobile web sites",
     "language": "en",
     "flags": [
@@ -809,10 +997,22 @@
     ]
   },
   {
+    "title": "三字经,三字经全文",
+    "url": "http://3.z12345.com",
+    "description": "Three Character Classic",
+    "language": "cn"
+  },
+  {
     "title": "书法集",
     "url": "http://wap.shufaji.com/",
     "description": "A mobile resource dedicated to Chinese calligraphy, featuring artist databases, style guides, and instructional content.",
     "language": "zh"
+  },
+  {
+    "title": "南国佛教",
+    "url": "http://wap.n12345.com/",
+    "description": "Information about Buddhism",
+    "language": "cn"
   },
   {
     "title": "天下网 - tx.com.cn",
@@ -822,9 +1022,33 @@
     "language": "zh"
   },
   {
+    "title": "孔子学院 孔子名言语录故事 孔子简介资料",
+    "url": "http://k.z12345.com/",
+    "description": "Confucius Institute, Famous Quotes and Stories about Confucius, Brief Biography of Confucius",
+    "language": "cn"
+  },
+  {
     "title": "按车次查询",
-    "url": "https://qq.ip138.com/train/search_train.wml",
+    "url": "http://qq.ip138.com/train/search_train.wml",
     "description": "Search trains, routes and stations.",
     "language": "zh"
+  },
+  {
+    "title": "新华字典,在线新华字典查字",
+    "url": "http://xh.wap.skyfont.com",
+    "description": "Directory",
+    "language": "cn"
+  },
+  {
+    "title": "歌词下载,彩虹歌词网",
+    "url": "http://ch.wap.skyfont.com/",
+    "description": "Song lyrics (also has English lyrics)",
+    "language": "cn"
+  },
+  {
+    "title": "谜语大全 儿童搞笑动物谜语大全及答案 谜语城",
+    "url": "http://my.wap.skyfont.com/",
+    "description": "Word puzzles, phrases, idioms, riddles, proverbs and similar",
+    "language": "cn"
   }
 ]
