@@ -8,119 +8,353 @@ function getLocalsrcPictogram(uri) {
     const localsrcPictograms = {
 
         // ========================================================================
-        // === WAP STANDARD (CORE) ================================================
+        // === WAP STANDARD — CORE PICTOGRAM SET (Section 7.1) ====================
         // ========================================================================
         // SUPPLIER: Open Mobile Alliance (OMA) / WAP Forum
         // SPECIFICATION: WAP-213-WAPInterPic (Wireless Application Protocol Pictogram Specification)
         // DOCUMENTATION: https://www.openmobilealliance.org/tech/affiliates/wap/wap-213-wapinterpic-20010406-a.pdf
+        // STATUS: Mandatory (M) — All core subclasses MUST be supported by conformant user agents.
+        // NOTE: Keys are stored lowercase because the lookup uses uri.toLowerCase().
+        //       Spec names use camelCase (e.g. upperRight) but we match case-insensitively.
 
-        // --- Navigation & Arrows ---
+        // --- core/arrow ---
         "pict:///core/arrow/up": { emoji: "⬆️" },
         "pict:///core/arrow/down": { emoji: "⬇️" },
-        "pict:///core/arrow/left": { emoji: "⬅️" },
         "pict:///core/arrow/right": { emoji: "➡️" },
-        "pict:///core/arrow/up_down": { emoji: "↕️" },
-        "pict:///core/arrow/left_right": { emoji: "↔️" },
+        "pict:///core/arrow/left": { emoji: "⬅️" },
+        "pict:///core/arrow/upperright": { emoji: "↗️" },       // spec: upperRight
+        "pict:///core/arrow/upperleft": { emoji: "↖️" },        // spec: upperLeft
+        "pict:///core/arrow/lowerright": { emoji: "↘️" },       // spec: lowerRight
+        "pict:///core/arrow/lowerleft": { emoji: "↙️" },        // spec: lowerLeft
+        "pict:///core/arrow/fingerup": { emoji: "👆" },         // spec: fingerUp
+        "pict:///core/arrow/fingerdown": { emoji: "👇" },       // spec: fingerDown
+        "pict:///core/arrow/fingerright": { emoji: "👉" },      // spec: fingerRight
+        "pict:///core/arrow/fingerleft": { emoji: "👈" },       // spec: fingerLeft
 
-        // --- Interface & Feedback ---
-        "pict:///core/check": { emoji: "✔️" },
-        "pict:///core/cross": { emoji: "❌" },
-        "pict:///core/stop": { emoji: "🛑" },
-        "pict:///core/info": { emoji: "ℹ️" },
-        "pict:///core/warning": { emoji: "⚠️" },
-        "pict:///core/question": { emoji: "❓" },
-        "pict:///core/help": { emoji: "🆘" },
-        "pict:///core/wait": { emoji: "⏳" },
-        "pict:///core/home": { emoji: "🏠" },
-        "pict:///core/search": { emoji: "🔍" },
-        "pict:///core/settings": { emoji: "⚙️" },
-        "pict:///core/trash": { emoji: "🗑️" },
+        // --- core/button ---
+        "pict:///core/button/1": { emoji: "1️⃣" },
+        "pict:///core/button/2": { emoji: "2️⃣" },
+        "pict:///core/button/3": { emoji: "3️⃣" },
+        "pict:///core/button/4": { emoji: "4️⃣" },
+        "pict:///core/button/5": { emoji: "5️⃣" },
+        "pict:///core/button/6": { emoji: "6️⃣" },
+        "pict:///core/button/7": { emoji: "7️⃣" },
+        "pict:///core/button/8": { emoji: "8️⃣" },
+        "pict:///core/button/9": { emoji: "9️⃣" },
+        "pict:///core/button/0": { emoji: "0️⃣" },
 
-        // --- Communication ---
-        "pict:///core/phone": { emoji: "📞" },
-        "pict:///core/mobile": { emoji: "📱" },
-        "pict:///core/fax": { emoji: "📠" },
-        "pict:///core/pager": { emoji: "📟" },
-        "pict:///core/mail": { emoji: "✉️" },
-        "pict:///core/mail/new": { emoji: "📩" },
-        "pict:///core/mail/read": { emoji: "📨" },
+        // --- core/action ---
+        "pict:///core/action/makephonecall": { emoji: "📞" },   // spec: makePhoneCall
+        "pict:///core/action/find": { emoji: "🔍" },
+        "pict:///core/action/userauthentication": { emoji: "🔐" }, // spec: userAuthentication
+        "pict:///core/action/password": { emoji: "🔑" },
+        "pict:///core/action/nextitem": { emoji: "⏭️" },       // spec: nextItem
+        "pict:///core/action/clear": { emoji: "🧹" },
+        "pict:///core/action/stop": { emoji: "🛑" },
+        "pict:///core/action/top": { emoji: "🏠" },
+        "pict:///core/action/next": { emoji: "⏩" },
+        "pict:///core/action/back": { emoji: "⏪" },
+        "pict:///core/action/receive": { emoji: "📥" },
+        "pict:///core/action/send": { emoji: "📤" },
 
-        // --- Security ---
-        "pict:///core/security/key": { emoji: "🔑" },
-        "pict:///core/security/lock": { emoji: "🔒" },
-        "pict:///core/security/unlock": { emoji: "🔓" },
+        // --- core/message ---
+        "pict:///core/message/message": { emoji: "✉️" },
+        "pict:///core/message/document": { emoji: "📄" },
+        "pict:///core/message/attachment": { emoji: "📎" },
+        "pict:///core/message/folder": { emoji: "📁" },
+        "pict:///core/message/inbox": { emoji: "📥" },
+        "pict:///core/message/outbox": { emoji: "📤" },
 
-        // --- Emotions (Smileys) ---
-        "pict:///core/happy": { emoji: "🙂" },
-        "pict:///core/sad": { emoji: "🙁" },
-        "pict:///core/wink": { emoji: "😉" },
-        "pict:///core/angry": { emoji: "😠" },
-        "pict:///core/confused": { emoji: "😕" },
-        "pict:///core/cool": { emoji: "😎" },
-        "pict:///core/grin": { emoji: "😁" },
-        "pict:///core/tongue": { emoji: "😛" },
-        "pict:///core/cry": { emoji: "😢" },
-        "pict:///core/surprised": { emoji: "😮" },
-        "pict:///core/devil": { emoji: "😈" },
-        "pict:///core/angel": { emoji: "😇" },
+        // --- core/state ---
+        "pict:///core/state/secure": { emoji: "🔒" },
+        "pict:///core/state/insecure": { emoji: "🔓" },
+        "pict:///core/state/copyright": { emoji: "©️" },
+        "pict:///core/state/trademark": { emoji: "™️" },
+        "pict:///core/state/underconstruction": { emoji: "🚧" }, // spec: underConstruction
+        "pict:///core/state/beginner": { emoji: "🔰" },
+
+        // --- core/media ---
+        "pict:///core/media/book": { emoji: "📖" },
+        "pict:///core/media/video": { emoji: "📹" },
+        "pict:///core/media/cd": { emoji: "💿" },
+        "pict:///core/media/dvd": { emoji: "📀" },
+        "pict:///core/media/game": { emoji: "🎮" },
+        "pict:///core/media/radio": { emoji: "📻" },
+        "pict:///core/media/tv": { emoji: "📺" },
+
+        // --- core/info ---
+        "pict:///core/info/notice": { emoji: "ℹ️" },
+        "pict:///core/info/charged": { emoji: "💲" },
+        "pict:///core/info/freeofcharge": { emoji: "🆓" },      // spec: freeofcharge (already lowercase)
+        "pict:///core/info/new": { emoji: "🆕" },
+        "pict:///core/info/position": { emoji: "📍" },
+        "pict:///core/info/tollfree": { emoji: "🆓" },
+        "pict:///core/info/sharpdial": { emoji: "#️⃣" },
+        "pict:///core/info/reserved": { emoji: "🎟️" },
+        "pict:///core/info/speechinfo": { emoji: "🗣️" },
 
 
         // ========================================================================
-        // === WAP STANDARD (EXTENSIONS) ==========================================
+        // === WAP STANDARD — PICTOGRAM DICTIONARY (Section 7.2) ==================
         // ========================================================================
-        // Additional classes defined in WAP-213 and widely supported.
+        // STATUS: Optional (O) — Manufacturers MAY install these sets.
 
-        // --- Weather ---
-        "pict:///weather/sun": { emoji: "☀️" },
-        "pict:///weather/cloud": { emoji: "☁️" },
-        "pict:///weather/rain": { emoji: "🌧️" },
-        "pict:///weather/snow": { emoji: "❄️" },
-        "pict:///weather/lightning": { emoji: "⚡" },
-        "pict:///weather/fog": { emoji: "🌫️" },
-        "pict:///weather/umbrella": { emoji: "☂️" },
-        "pict:///weather/moon": { emoji: "🌙" },
-
-        // --- Human & Action ---
-        "pict:///human/run": { emoji: "🏃" },
-        "pict:///human/walk": { emoji: "🚶" },
-        "pict:///human/skull": { emoji: "💀" },
-        "pict:///human/eye": { emoji: "👁️" },
-        "pict:///human/ear": { emoji: "👂" },
-
-        // --- Animals ---
+        // --- animal ---
+        "pict:///animal/octopus": { emoji: "🐙" },
+        "pict:///animal/monkey": { emoji: "🐒" },
+        "pict:///animal/pig": { emoji: "🐖" },
         "pict:///animal/cat": { emoji: "🐈" },
         "pict:///animal/dog": { emoji: "🐕" },
-        "pict:///animal/bird": { emoji: "🐦" },
+        "pict:///animal/bear": { emoji: "🐻" },
+        "pict:///animal/whale": { emoji: "🐋" },
+        "pict:///animal/penguin": { emoji: "🐧" },
+        "pict:///animal/tiger": { emoji: "🐅" },
+        "pict:///animal/rabbit": { emoji: "🐇" },
+        "pict:///animal/rat": { emoji: "🐀" },
+        "pict:///animal/ladybird": { emoji: "🐞" },
+        "pict:///animal/beetle": { emoji: "🪲" },
         "pict:///animal/fish": { emoji: "🐟" },
-        "pict:///animal/horse": { emoji: "🐎" },
-        "pict:///animal/bunny": { emoji: "🐇" },
 
-        // --- Transport ---
-        "pict:///transport/car": { emoji: "🚗" },
-        "pict:///transport/bus": { emoji: "🚌" },
-        "pict:///transport/train": { emoji: "🚆" },
-        "pict:///transport/plane": { emoji: "✈️" },
-        "pict:///transport/ship": { emoji: "🚢" },
-        "pict:///transport/bike": { emoji: "🚲" },
-        "pict:///transport/gas": { emoji: "⛽" },
-        "pict:///transport/parking": { emoji: "🅿️" },
+        // --- appliance ---
+        "pict:///appliance/pager": { emoji: "📟" },
+        "pict:///appliance/antenna": { emoji: "📡" },
+        "pict:///appliance/camera": { emoji: "📷" },
+        "pict:///appliance/phone": { emoji: "📞" },
+        "pict:///appliance/mobilephone": { emoji: "📱" },       // spec: mobilePhone
+        "pict:///appliance/fax": { emoji: "📠" },
+        "pict:///appliance/pc": { emoji: "💻" },
 
-        // --- Objects, Tech & Misc ---
-        "pict:///building/home": { emoji: "🏠" },
-        "pict:///building/office": { emoji: "🏢" },
-        "pict:///building/shop": { emoji: "🏪" },
-        "pict:///food/restaurant": { emoji: "🍽️" },
-        "pict:///food/coffee": { emoji: "☕" },
+        // --- astronomy ---
+        "pict:///astronomy/sun": { emoji: "☀️" },
+        "pict:///astronomy/moon": { emoji: "🌙" },
+        "pict:///astronomy/earth": { emoji: "🌍" },
+        "pict:///astronomy/star": { emoji: "⭐" },
+
+        // --- chinesezodiac ---                                 // spec: chineseZodiac
+        "pict:///chinesezodiac/rat": { emoji: "🐀" },
+        "pict:///chinesezodiac/ox": { emoji: "🐂" },
+        "pict:///chinesezodiac/tiger": { emoji: "🐅" },
+        "pict:///chinesezodiac/rabbit": { emoji: "🐇" },
+        "pict:///chinesezodiac/dragon": { emoji: "🐉" },
+        "pict:///chinesezodiac/snake": { emoji: "🐍" },
+        "pict:///chinesezodiac/horse": { emoji: "🐎" },
+        "pict:///chinesezodiac/sheep": { emoji: "🐑" },
+        "pict:///chinesezodiac/monkey": { emoji: "🐒" },
+        "pict:///chinesezodiac/cock": { emoji: "🐓" },
+        "pict:///chinesezodiac/dog": { emoji: "🐕" },
+        "pict:///chinesezodiac/boar": { emoji: "🐗" },
+
+        // --- dress ---
+        "pict:///dress/highheels": { emoji: "👠" },             // spec: highHeels
+        "pict:///dress/dress": { emoji: "👗" },
+
+        // --- emotion ---
+        "pict:///emotion/smile": { emoji: "🙂" },
+        "pict:///emotion/cry": { emoji: "😢" },
+        "pict:///emotion/sad": { emoji: "🙁" },
+        "pict:///emotion/angry": { emoji: "😠" },
+        "pict:///emotion/pullface": { emoji: "😜" },            // spec: pullFace
+        "pict:///emotion/inlove": { emoji: "😍" },              // spec: inLove
+        "pict:///emotion/shock": { emoji: "😱" },
+        "pict:///emotion/coldsweat": { emoji: "😰" },           // spec: coldSweat
+        "pict:///emotion/shakenheart": { emoji: "💗" },          // spec: shakenHeart
+        "pict:///emotion/brokenheart": { emoji: "💔" },          // spec: brokenHeart
+        "pict:///emotion/discourage": { emoji: "😞" },
+        "pict:///emotion/flash": { emoji: "💡" },
+        "pict:///emotion/sleepy": { emoji: "😴" },
+        "pict:///emotion/anxious": { emoji: "😟" },
+        "pict:///emotion/surprised": { emoji: "😮" },
+        "pict:///emotion/tutting": { emoji: "😤" },
+        "pict:///emotion/happy": { emoji: "😊" },
+        "pict:///emotion/punch": { emoji: "👊" },
+        "pict:///emotion/wink": { emoji: "😉" },
+        "pict:///emotion/thumbsup": { emoji: "👍" },            // spec: thumbsUp
+        "pict:///emotion/thumbsdown": { emoji: "👎" },           // spec: thumbsDown
+        "pict:///emotion/kiss": { emoji: "😘" },
+        "pict:///emotion/smell": { emoji: "🤔" },
+        "pict:///emotion/cool": { emoji: "😎" },
+        "pict:///emotion/hug": { emoji: "🤗" },
+        "pict:///emotion/trapped": { emoji: "😖" },
+        "pict:///emotion/shine": { emoji: "✨" },
+
+        // --- entertainment ---
+        "pict:///entertainment/prize": { emoji: "🏆" },
+        "pict:///entertainment/slotmachine": { emoji: "🎰" },   // spec: slotMachine
+        "pict:///entertainment/horserace": { emoji: "🏇" },
+        "pict:///entertainment/motorboatrace": { emoji: "🚤" }, // spec: motorboatRace
+        "pict:///entertainment/bicyclerace": { emoji: "🚴" },   // spec: bicycleRace
+        "pict:///entertainment/heart": { emoji: "♥️" },
+        "pict:///entertainment/diamond": { emoji: "♦️" },
+        "pict:///entertainment/spade": { emoji: "♠️" },
+        "pict:///entertainment/clover": { emoji: "♣️" },
+        "pict:///entertainment/hitdart": { emoji: "🎯" },       // spec: hitDart
+        "pict:///entertainment/crown": { emoji: "👑" },
+
+        // --- food ---
         "pict:///food/beer": { emoji: "🍺" },
-        "pict:///device/pc": { emoji: "💻" },
-        "pict:///device/calculator": { emoji: "🧮" },
-        "pict:///device/camera": { emoji: "📷" },
-        "pict:///stationery/pencil": { emoji: "✏️" },
-        "pict:///stationery/book": { emoji: "📖" },
-        "pict:///misc/heart": { emoji: "❤️" },
-        "pict:///misc/broken_heart": { emoji: "💔" },
-        "pict:///misc/star": { emoji: "⭐" },
-        "pict:///misc/music": { emoji: "🎵" },
+        "pict:///food/forkknife": { emoji: "🍽️" },             // spec: forkKnife
+        "pict:///food/cocktail": { emoji: "🍸" },
+        "pict:///food/cake": { emoji: "🎂" },
+        "pict:///food/coffeecup": { emoji: "☕" },              // spec: coffeeCup
+
+        // --- horoscope ---
+        "pict:///horoscope/aries": { emoji: "♈" },
+        "pict:///horoscope/taurus": { emoji: "♉" },
+        "pict:///horoscope/gemini": { emoji: "♊" },
+        "pict:///horoscope/cancer": { emoji: "♋" },
+        "pict:///horoscope/leo": { emoji: "♌" },
+        "pict:///horoscope/virgo": { emoji: "♍" },
+        "pict:///horoscope/libra": { emoji: "♎" },
+        "pict:///horoscope/scorpio": { emoji: "♏" },
+        "pict:///horoscope/sagittarius": { emoji: "♐" },
+        "pict:///horoscope/capricorn": { emoji: "♑" },
+        "pict:///horoscope/aquarius": { emoji: "♒" },
+        "pict:///horoscope/pisces": { emoji: "♓" },
+        "pict:///horoscope/ophiuchus": { emoji: "⛎" },
+
+        // --- human/age ---
+        "pict:///human/age/baby": { emoji: "👶" },
+
+        // --- human/body ---
+        "pict:///human/body/eye": { emoji: "👁️" },
+        "pict:///human/body/ear": { emoji: "👂" },
+        "pict:///human/body/rock": { emoji: "✊" },
+        "pict:///human/body/scissors": { emoji: "✌️" },
+        "pict:///human/body/paper": { emoji: "✋" },
+        "pict:///human/body/foot": { emoji: "🦶" },
+        "pict:///human/body/shoes": { emoji: "👟" },
+        "pict:///human/body/spectacles": { emoji: "👓" },
+        "pict:///human/body/wheelchair": { emoji: "♿" },
+
+        // --- human/gender ---
+        "pict:///human/gender/man": { emoji: "👨" },
+        "pict:///human/gender/woman": { emoji: "👩" },
+
+        // --- humanoid ---
+        "pict:///humanoid/devil": { emoji: "😈" },
+        "pict:///humanoid/skull": { emoji: "💀" },
+        "pict:///humanoid/alien": { emoji: "👽" },
+        "pict:///humanoid/ghost": { emoji: "👻" },
+        "pict:///humanoid/angel": { emoji: "😇" },
+
+        // --- map ---
+        "pict:///map/signal": { emoji: "🚦" },
+        "pict:///map/parking": { emoji: "🅿️" },
+        "pict:///map/busstop": { emoji: "🚏" },                // spec: busStop
+        "pict:///map/restroom": { emoji: "🚻" },
+        "pict:///map/policestation": { emoji: "👮" },           // spec: policeStation
+        "pict:///map/postoffice": { emoji: "🏤" },              // spec: postOffice
+        "pict:///map/bank": { emoji: "🏦" },
+        "pict:///map/atm": { emoji: "🏧" },
+        "pict:///map/hospital": { emoji: "🏥" },
+        "pict:///map/conveniencestore": { emoji: "🏪" },        // spec: convenienceStore
+        "pict:///map/school": { emoji: "🏫" },
+        "pict:///map/park": { emoji: "🏞️" },
+        "pict:///map/hotel": { emoji: "🏨" },
+        "pict:///map/gasstation": { emoji: "⛽" },              // spec: gasStation
+        "pict:///map/house": { emoji: "🏠" },
+        "pict:///map/cross": { emoji: "⛪" },
+        "pict:///map/restaurant": { emoji: "🍽️" },
+        "pict:///map/store": { emoji: "🏬" },
+        "pict:///map/cafe": { emoji: "☕" },
+        "pict:///map/fastfood": { emoji: "🍔" },
+        "pict:///map/pub": { emoji: "🍺" },
+        "pict:///map/movie": { emoji: "🎬" },
+        "pict:///map/karaoke": { emoji: "🎤" },
+        "pict:///map/spa": { emoji: "♨️" },
+        "pict:///map/amusementpark": { emoji: "🎡" },           // spec: amusementPark
+        "pict:///map/zoo": { emoji: "🦁" },
+        "pict:///map/building": { emoji: "🏢" },
+        "pict:///map/ticket": { emoji: "🎫" },
+        "pict:///map/nosmoking": { emoji: "🚭" },              // spec: noSmoking
+        "pict:///map/smoking": { emoji: "🚬" },
+
+        // --- misc ---
+        "pict:///misc/giftbox": { emoji: "🎁" },               // spec: giftBox
+        "pict:///misc/fire": { emoji: "🔥" },
+        "pict:///misc/snowman": { emoji: "⛄" },
+        "pict:///misc/work": { emoji: "🚧" },
+        "pict:///misc/money": { emoji: "💰" },
+
+        // --- music ---
+        "pict:///music/quarternote": { emoji: "🎵" },           // spec: quarterNote
+        "pict:///music/g-clef": { emoji: "🎼" },               // spec: G-clef
+        "pict:///music/rest": { emoji: "🎶" },
+        "pict:///music/guitar": { emoji: "🎸" },
+
+        // --- plant ---
+        "pict:///plant/fourleafclover": { emoji: "🍀" },        // spec: fourLeafClover
+        "pict:///plant/flower": { emoji: "🌸" },
+
+        // --- ranking ---
+        "pict:///ranking/trophy": { emoji: "🏆" },
+        "pict:///ranking/gold": { emoji: "🥇" },
+        "pict:///ranking/silver": { emoji: "🥈" },
+        "pict:///ranking/bronze": { emoji: "🥉" },
+
+        // --- sport ---
+        "pict:///sport/sport": { emoji: "🏅" },
+        "pict:///sport/baseball": { emoji: "⚾" },
+        "pict:///sport/soccer": { emoji: "⚽" },
+        "pict:///sport/basketball": { emoji: "🏀" },
+        "pict:///sport/ski": { emoji: "⛷️" },
+        "pict:///sport/camp": { emoji: "⛺" },
+        "pict:///sport/motorsport": { emoji: "🏎️" },           // spec: motorSport
+        "pict:///sport/checkerflag": { emoji: "🏁" },           // spec: checkerFlag
+        "pict:///sport/golf": { emoji: "⛳" },
+        "pict:///sport/surfing": { emoji: "🏄" },
+        "pict:///sport/fishing": { emoji: "🎣" },
+        "pict:///sport/horseriding": { emoji: "🏇" },
+        "pict:///sport/americanfootball": { emoji: "🏈" },      // spec: americanFootball
+        "pict:///sport/swimming": { emoji: "🏊" },
+        "pict:///sport/scuba": { emoji: "🤿" },
+
+        // --- time/event ---
+        "pict:///time/event/anniversary": { emoji: "💒" },
+        "pict:///time/event/holiday": { emoji: "🏖️" },
+        "pict:///time/event/xmas": { emoji: "🎄" },
+        "pict:///time/event/birthday": { emoji: "🎂" },
+        "pict:///time/event/party": { emoji: "🎉" },
+        "pict:///time/event/newyearseve": { emoji: "🎆" },     // spec: newYearsEve
+        "pict:///time/event/newyearsday": { emoji: "🎊" },     // spec: newYearsDay
+
+        // --- time/schedule ---
+        "pict:///time/schedule/3oclock": { emoji: "🕒" },
+        "pict:///time/schedule/calendar": { emoji: "📅" },
+
+        // --- time/season ---
+        "pict:///time/season/spring": { emoji: "🌸" },
+        "pict:///time/season/summer": { emoji: "☀️" },
+        "pict:///time/season/autumn": { emoji: "🍂" },
+        "pict:///time/season/winter": { emoji: "❄️" },
+
+        // --- tool ---
+        "pict:///tool/hammer": { emoji: "🔨" },
+
+        // --- vehicle ---
+        "pict:///vehicle/bus": { emoji: "🚌" },
+        "pict:///vehicle/train": { emoji: "🚆" },
+        "pict:///vehicle/expresstrain": { emoji: "🚄" },       // spec: expressTrain
+        "pict:///vehicle/car": { emoji: "🚗" },
+        "pict:///vehicle/taxi": { emoji: "🚕" },
+        "pict:///vehicle/plane": { emoji: "✈️" },
+        "pict:///vehicle/ship": { emoji: "🚢" },
+        "pict:///vehicle/onfoot": { emoji: "🚶" },             // spec: onFoot
+        "pict:///vehicle/subway": { emoji: "🚇" },
+        "pict:///vehicle/rocket": { emoji: "🚀" },
+
+        // --- weapon ---
+        "pict:///weapon/gun": { emoji: "🔫" },
+        "pict:///weapon/bomb": { emoji: "💣" },
+
+        // --- weather ---
+        "pict:///weather/sunny": { emoji: "☀️" },
+        "pict:///weather/rainy": { emoji: "🌧️" },
+        "pict:///weather/cloudy": { emoji: "☁️" },
+        "pict:///weather/snow": { emoji: "❄️" },
+        "pict:///weather/thunder": { emoji: "⚡" },
+        "pict:///weather/foggy": { emoji: "🌫️" },
+        "pict:///weather/wave": { emoji: "🌊" },
 
 
         // ========================================================================
